@@ -10,7 +10,7 @@ const CONTACT_ITEMS = [
   {
     icon: "bi-envelope-fill",
     label: "Email",
-    value: "vikramkumarit911@gmail.com",
+    value: "vikramcodes0@gmail.com",
   },
   { icon: "bi-telephone-fill", label: "Phone", value: "+91 8595422784" },
   {
@@ -21,7 +21,7 @@ const CONTACT_ITEMS = [
   {
     icon: "bi-github",
     label: "GitHub",
-    value: "https://github.com/vk8595422784-sudo",
+    value: "github.com/vikramKumar-code",
   },
 ];
 
