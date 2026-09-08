@@ -1,103 +1,97 @@
-// Replace these with your own real projects, descriptions, and links.
 const projects = [
   {
     id: 1,
-    title: "Student Task Management System",
+    title: "Shopster — Full-Stack E-Commerce Platform",
     category: "Full-Stack",
+    year: null,
     description:
-      "A full-stack task management app for students to create, organize and track assignments and deadlines. Features task creation with due dates and priority levels, status tracking (pending/in-progress/completed), and a dashboard view of upcoming tasks. Built with React, Node.js, Express and MongoDB.",
-    tags: ["React", "Node.js", "Express", "MongoDB", "REST API"],
-    demo: "#",
-    code: "https://github.com/vk8595422784-sudo/Student_Task_Management/tree/master",
+      "Collaborated as a contributor on a full-stack e-commerce platform, owning the payment, cart, product, and order management modules end-to-end.",
+    highlights: [
+      "Integrated Stripe payment gateway with webhook-based order confirmation, enabling secure checkout for real transactions.",
+      "Built a real-time shopping cart with add/update/remove operations synced to MongoDB, supporting persistent sessions across page reloads.",
+      "Designed product listing and order management APIs handling filtering, pagination, and status tracking across the purchase workflow.",
+      "Developed an admin panel for product, order, and platform management, used to control inventory and monitor sales activity.",
+    ],
+    tags: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT",
+      "Stripe",
+      "Webhooks",
+      "RBAC",
+    ],
+    demo: "https://shopster-e-commerce-indol.vercel.app",
+    code: "https://github.com/rohnshrma/backend-shopster/tree/vikram",
   },
   {
     id: 2,
-    title: "Weather Dashboard",
-    category: "Frontend",
+    title: "Student Task Management System",
+    category: "Full-Stack",
+    year: "2025",
     description:
-      "A responsive weather lookup app built with JavaScript and a public weather API, styled entirely with Bootstrap components.",
-    tags: ["JavaScript", "Bootstrap", "API"],
-    demo: "https://wether-app-nu-ashen.vercel.app/",
-    code: "https://github.com/vk8595422784-sudo/WetherApp",
+      "A full-stack task management platform enabling students to create, organize, and track assignments across separate Admin, Teacher, and Student dashboards.",
+    highlights: [
+      "Implemented JWT-based, role-based authentication with protected routes controlling access to 3 distinct user roles.",
+      "Designed RESTful APIs for tasks, deadlines, and progress tracking, backed by a normalized MongoDB schema linking users, tasks, and submissions.",
+      "Added due-date reminders and status labels (Pending, In Progress, Completed) to improve task visibility and reduce missed deadlines.",
+      "Deployed frontend on Vercel and backend API on Render as a fully hosted production environment.",
+    ],
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Bootstrap"],
+    demo: "https://student-task-management-umber.vercel.app/login",
+    code: "https://github.com/vikramKumar-code/Student_Task_Management",
   },
   {
     id: 3,
-    title: "E-Commerce (Game) API",
-    category: "Backend",
+    title: "Lead Desk Mini — CRM-Style Lead Management App",
+    category: "Full-Stack",
+    year: "2025",
     description:
-      "A REST API for a gaming e-commerce platform, handling game listings, user carts, orders, and authentication. Built with Node.js, Express and MongoDB.",
-    tags: ["Node.js", "Express", "MongoDB", "REST API", "JWT"],
-    demo: "#",
-    code: "https://github.com/vk8595422784-sudo/E-commerceAPI",
+      "A mini CRM application to capture, organize, and track sales leads through a multi-stage pipeline (New, Contacted, Qualified, Closed).",
+    highlights: [
+      "Implemented JWT-based authentication to secure access to lead records and dashboard routes.",
+      "Developed RESTful APIs for creating, updating, and querying lead records, with server-side filtering by pipeline stage.",
+      "Designed an intuitive dashboard UI for visualizing leads across pipeline stages, improving lead tracking clarity.",
+      "Deployed frontend on Vercel and backend API on Render.",
+    ],
+    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "JWT", "Bootstrap"],
+    demo: "https://lead-desk-mini-frontend.vercel.app/",
+    frontendCode: "https://github.com/vikramKumar-code/leadDesk_mini_Frontend",
+    backendCode: "https://github.com/vikramKumar-code/leadDesk_mini_API",
   },
-  // ---------- Authentication System ----------
   {
     id: 4,
-    title: "Authentication System — Backend",
-    category: "Backend",
+    title: "AI ChatBot — Gemini-Powered Chat Application",
+    category: "Full-Stack",
+    year: null,
     description:
-      "A secure authentication REST API with signup, login, and protected routes. Implements password hashing (bcrypt), JWT-based session/token handling, and role-based access control middleware. Built with Node.js, Express and MongoDB.",
-    tags: ["Node.js", "Express", "MongoDB", "JWT", "bcrypt"],
-    demo: "#",
-    code: "https://github.com/vk8595422784-sudo/Authentication_System_Api",
-  },
-  {
-    id: 5,
-    title: "Authentication System — Frontend",
-    category: "Frontend",
-    description:
-      "A React-based login and registration UI that consumes the authentication API. Handles form validation, JWT token storage, protected/private routes, and redirects for logged-in vs logged-out users.",
-    tags: ["React", "Bootstrap", "JavaScript"],
-    demo: "https://authentication-sysytem-frontend.vercel.app/login",
-    code: "https://github.com/vk8595422784-sudo/Authentication_Sysytem_Frontend",
-  },
-
-  // ---------- Expense Tracker ----------
-  {
-    id: 6,
-    title: "Expense Tracker — Backend",
-    category: "Backend",
-    description:
-      "A REST API for managing personal expenses and income, with CRUD endpoints for transactions and category-based filtering. Built with Node.js, Express and MongoDB, tested with Postman.",
-    tags: ["Node.js", "Express", "MongoDB", "REST API"],
-    demo: "#",
-    code: "#",
-  },
-  {
-    id: 7,
-    title: "Expense Tracker — Frontend",
-    category: "Frontend",
-    description:
-      "A React dashboard for adding and categorizing daily expenses, with a running balance view and spending breakdown. Styled with Bootstrap for a clean, responsive layout.",
-    tags: ["React", "Bootstrap", "JavaScript"],
-    demo: "#",
-    code: "#",
-  },
-
-  // ---------- Lead Desk Mini ----------
-  {
-    id: 8,
-    title: "Lead Desk Mini — Backend",
-    category: "Backend",
-    description:
-      "A REST API for a lightweight CRM tool, managing sales leads through stages (new, contacted, converted, lost). Includes CRUD endpoints and status-update routes. Built with Node.js, Express and MongoDB.",
-    tags: ["Node.js", "Express", "MongoDB", "REST API"],
-    demo: "",
-    code: "#",
-  },
-  {
-    id: 9,
-    title: "Lead Desk Mini — Frontend",
-    category: "Frontend",
-    description:
-      "A React interface for viewing, filtering, and updating sales leads by stage, consuming the Lead Desk Mini API. Built with Bootstrap for a responsive table/card layout.",
-    tags: ["React", "Bootstrap", "JavaScript"],
-    code: "https://github.com/vk8595422784-sudo/leadDesk_mini_Frontend",
-    demo: "https://lead-desk-mini-frontend.vercel.app/",
-    code: "https://github.com/vk8595422784-sudo/leadDesk_mini_Frontend",
+      "Built an AI-powered chatbot application integrating Google's Gemini API to generate real-time, context-aware conversational responses.",
+    highlights: [
+      "Implemented JWT-based authentication to secure user sessions and protect chat history.",
+      "Used Redis to implement rate limiting, preventing API abuse and ensuring fair usage across users.",
+      "Containerized the application with Docker for consistent, reproducible deployment across environments.",
+      "Designed MongoDB schemas to persist user conversations and chat history.",
+      "Built a responsive chat interface using React.js, TypeScript, and Bootstrap for a smooth user experience.",
+    ],
+    tags: [
+      "React.js",
+      "TypeScript",
+      "Bootstrap",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redis",
+      "Docker",
+      "JWT",
+      "Gemini API",
+    ],
+    demo: "https://chat-bot-frontend-one-beta.vercel.app/",
+    frontendCode: "https://github.com/vikramKumar-code/ai-ChatBot-frontend",
+    backendCode: "https://github.com/vikramKumar-code/ChatBot-backend",
   },
 ];
 
-export const categories = ["All", "Frontend", "Backend", "Full-Stack"];
+export const categories = ["All", "Full-Stack", "Frontend", "Backend"];
 
 export default projects;

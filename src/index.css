@@ -708,3 +708,21 @@ code {
   object-fit: cover;
   border: 3px solid var(--signal);
 }
+
+.project-year {
+  color: var(--slate-soft);
+  font-size: .85rem;
+  font-weight: 400;
+}
+
+.project-highlights {
+  margin: 0 0 .5rem;
+  padding-left: 1.1rem;
+  font-size: .85rem;
+  color: var(--slate-soft);
+}
+
+.project-highlights li {
+  margin-bottom: .35rem;
+  line-height: 1.5;
+}

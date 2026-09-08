@@ -62,7 +62,7 @@ export default function Hero() {
               </div>
               <div className="terminal-body">
                 <p className="term-line">
-                  <span className="prompt">$</span> who i am
+                  <span className="prompt">$</span> whoami
                 </p>
                 <p className="term-out">{typedName}</p>
                 <p className="term-line">

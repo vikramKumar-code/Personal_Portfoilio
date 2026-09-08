@@ -4,23 +4,60 @@ export default function ProjectCard({ project }) {
       <div className="project-card">
         <div className="project-tab-bar">
           <i className="bi bi-file-earmark-code me-1"></i>
-          {project.title.toLowerCase().replace(/\s+/g, '-')}.jsx
+          {project.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}.jsx
         </div>
         <div className="project-body">
-          <h5>{project.title}</h5>
+          <h5>
+            {project.title}
+            {project.year && (
+              <span className="project-year"> ({project.year})</span>
+            )}
+          </h5>
           <p>{project.description}</p>
+
+          {project.highlights && (
+            <ul className="project-highlights">
+              {project.highlights.map((point, i) => (
+                <li key={i}>{point}</li>
+              ))}
+            </ul>
+          )}
+
           <div className="project-tags">
             {project.tags.map((tag) => (
               <span key={tag}>{tag}</span>
             ))}
           </div>
+
           <div className="project-links">
-            <a href={project.demo}>
-              <i className="bi bi-box-arrow-up-right me-1"></i>Live Demo
-            </a>
-            <a href={project.code}>
-              <i className="bi bi-github me-1"></i>Source Code
-            </a>
+            {project.demo && (
+              <a href={project.demo} target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-box-arrow-up-right me-1"></i>Live Demo
+              </a>
+            )}
+            {project.code && (
+              <a href={project.code} target="_blank" rel="noopener noreferrer">
+                <i className="bi bi-github me-1"></i>GitHub
+              </a>
+            )}
+            {project.frontendCode && (
+              <a
+                href={project.frontendCode}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-github me-1"></i>Frontend Repo
+              </a>
+            )}
+            {project.backendCode && (
+              <a
+                href={project.backendCode}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="bi bi-github me-1"></i>Backend Repo
+              </a>
+            )}
           </div>
         </div>
       </div>

@@ -13,6 +13,7 @@ const skillGroups = [
       { name: "Bootstrap 5", icon: "bootstrap/bootstrap-original" },
       { name: "JavaScript (ES6+)", icon: "javascript/javascript-original" },
       { name: "React.js", icon: "react/react-original" },
+      { name: "TypeScript", icon: "typescript/typescript-original" },
     ],
   },
   {
